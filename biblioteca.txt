@@ -1,2 +1,3 @@
 1984,George Orwell,1949,PDF,Disponible
-Don Quijote,Miguel de Cervantes,1605,Disponible
+El Río,Alfredo Gómez Morel,1962,Disponible
+El socio,Jenaro Prieto,1928,ePub,Prestado

@@ -81,13 +81,19 @@ class Biblioteca:
     
     def listar_libros(self):
         #Lista todos los libros en la biblioteca
+        if not self.libros:
+            print("La biblioteca esta vacia.")
+            return
+        print("\n --- Libros en la biblioteca --- \n")
         for libro in self.libros:
             print(libro)
+            print("-" * 40)
 
     def buscar_libro(self, titulo):
         #Busca un libro por su título y lo devuelve
         for libro in self.libros:
             if libro.get_titulo() == titulo:
+                print("\n --- Libro encontrado --- \n")
                 print(libro)
                 return
         #Si no se encuentra, lanza una excepción
@@ -138,7 +144,7 @@ class Biblioteca:
                 else:
                     # Si es un libro físico, no guarda la información adicional
                     file.write(f"{libro.get_titulo()},{libro.get_autor()},{libro.get_anio()},{libro.get_estado()}\n")
-        print("Libros guardados en el archivo.")
+        print("Cambios guardados en el archivo.")
 
     
 def main():
@@ -193,7 +199,7 @@ def main():
                     print(e)
             elif opcion == '7':
                 biblioteca.guardar_libros()
-                print("Gracias por usar el Gestor de Biblioteca!")
+                print("Gracias por usar el Gestor de Biblioteca")
                 break
             else:
                 print("Opción inválida. Por favor, seleccione una opcción válida.")

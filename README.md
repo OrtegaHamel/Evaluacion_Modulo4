@@ -21,7 +21,7 @@ Este programa es una aplicación de gestión de biblioteca escrita en Python. Pe
    ```sh
    python gestor_biblioteca.py
 
-Si tienes varias versiones de Python instaladas, asegúrate de usar python3 en lugar de python.
+Si tienes varias versiones de Python instaladas, asegúrate de usar Python 3.
 
 ## Uso
 
